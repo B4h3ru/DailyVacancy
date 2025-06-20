@@ -1,0 +1,527 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 24, 24);
+    /* font-family: Arial; */
+}
+.nav{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    border-bottom: 1px rgb(202, 92, 2) solid;
+    box-shadow: 0px 0px 10px 1px rgb(137, 102, 21);
+}
+.nav-logo{
+    color: rgb(241, 125, 10);
+    font-size: 25px;
+    font-weight: bold; 
+} 
+.nav-group{
+    display: inline;
+    position: absolute;
+    top:0px;
+    border: 1px rgb(237, 123, 9) solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(255, 151, 5);
+    right: 10px;
+    padding: 5px;
+    z-index: 10;
+    
+
+}
+.nav-list{
+    display: inline;
+    list-style-type: none;
+   
+}
+.nav-link{
+    display: inline;
+    padding-right: 10px;
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    font-weight: bold;
+    margin-left: 0px;
+    font-size: 17px;
+    padding: 5px;
+    z-index: 5;
+
+}
+.nav-link:hover{
+    background-color: rgb(27, 25, 25);
+    /* border: 1px white solid; */
+    border-radius: 5px;
+    color: blue;
+}
+.login-btn{
+    /* border-left: 1px rgb(212, 115, 4) solid; */
+    border-top: 1px rgb(212, 115, 4) solid;
+    /* border-bottom: 1px rgb(212, 115, 4) solid; */
+    color: rgb(241, 125, 10) ;
+
+    border-radius: 5%;
+}
+.search-form{
+    position: absolute;
+    display: inline;
+    top:0px;
+    right: 125px;
+    padding: 5px;
+
+}
+.search{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    right: 486px;
+    margin-top: 12px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(223, 222, 221);
+    border-radius: 10px;
+    border: 1px rgb(235, 106, 15) solid;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0px 0px 5px 1px rgb(137, 102, 21);
+    transition: width 2s;
+}
+.search:focus{
+    width: 150px;
+}
+.search-btn{
+    position: absolute;
+    height: 28px;
+    width: 30px;
+    right: 453px;
+    margin-top: 12px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px 1px rgb(173, 127, 20);
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px rgb(233, 104, 12) solid;
+}
+.search-btn:hover{
+    background-color: #17077e;
+}
+.chkbox{
+    display: none;
+}
+
+@media screen and (max-width: 950px ) {
+    .search-form{
+        right: 10px;
+    }
+    .search{
+        margin-top: 12px;
+        right: 60px;
+        height: 20px;
+        width: 61px;
+    }
+    .search-btn{
+        height: 18px;
+        width: 20px;
+        right: 38px;
+        margin-top: 12px;
+    }
+    .menu{
+        position: absolute;
+        display: block;
+        height: 20px;
+        width: 40px;
+        /* margin-top: 15px; */
+        border: 0px rgb(137, 102, 21) solid;
+        right: 20px;
+        top: 0;
+    }
+    .menu-style-1{
+        position: absolute;
+        width: 40px;
+        border: 2px rgb(217, 121, 3) solid;
+        margin-top: 10px;
+    
+    }
+    .menu-style-2{
+        position: absolute;
+        width: 40px;
+        border: 2px rgb(217, 121, 3) solid;
+        margin-top: 20px;   
+     }
+    .menu-style-3{
+        position: absolute;
+        width: 40px;
+        border: 2px rgb(217, 121, 3) solid;
+        margin-top: 30px;
+    }
+    input[type=checkbox]:checked ~ .nav-group{
+        display: block;
+        /* width: 100%; */
+        border-style: none;
+    }
+    .chkbox-label{
+        position: absolute;
+        padding-left: 3px;
+        width: 50px;
+        height: 45px;
+        margin-top: 4px;
+    }
+
+    .nav-group{
+        position: absolute;
+        display: none;
+        margin-top: 60px;
+        margin-right: 0px;
+        top: 1px;
+        right: -30px;
+        width: 100vw;
+        background-color: black;
+        border-radius: 5px;
+        /* padding-left: 0;  */
+        z-index: 10;
+        border: 1px rgb(5, 5, 5) solid;
+        border-style: none;
+    }
+    .nav-link{
+        text-align: center;
+        display: block;
+        padding: 15px;  
+    }
+    
+}
+
+/*  ====================================================================================================================================================== */
+/*this is body style */
+
+.container-first{
+    margin-top: 60px;
+    color: white;
+}
+.home-style{
+    height: 50vh;
+    width: 100vw;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    background-image: url("../images/showcase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+/* Slideshow container */
+.carousel-container {
+    max-width: 1000px;
+    /* position: relative; */
+    margin: 70px auto;
+    
+  box-sizing: border-box;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+/* Caption text */
+.text {
+  color: #f6eded;
+  font-size: 1.5rem;
+  /* padding: 8px 12px; */
+  /* position: absolute; */
+  /* bottom: 8px; */
+  /* width: 100%; */
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    margin-top: 80px;
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.container{
+    margin-left: 5vw;
+    color: rgb(226, 226, 226);
+    z-index: 0;
+    margin-top: 10px;
+}
+.category-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding-right: 1.5rem;
+    background-color: #1a1818;
+}
+.category{
+    background: #949393;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgb(255, 147, 24);
+   a{
+    text-decoration: none;
+    color: #000000;
+   }
+    
+}
+.category:hover{
+    background: #717171;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgb(255, 147, 24);
+}
+.btn{
+    background-color: rgb(10, 205, 10);
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.btn:hover{
+background-color: #129109;
+}
+.center{
+    text-align: center;
+
+}
+
+ /* post style  */
+.post-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+.vacancy-contanet{
+    /* display: flex; */
+    box-sizing:border-box;
+    /* width: 400px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px rgb(215, 118, 7) solid;
+    background-color: #1a1a1aef;
+    color: #f6eded;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 0px rgb(95, 95, 95) ;
+    overflow: hidden;
+}
+.flex-post{
+    width: 30vw;
+}
+.image-style{
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+}
+.apply{
+    background-color: rgb(205, 121, 10);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-color: #ca8506;
+    border-style: solid;
+
+}
+.apply:hover{
+    background-color: rgb(141, 69, 6);
+}
+.share{
+    color: #ffffff;
+    /* font-size: 25px; */
+    border-radius: 5px;
+    text-decoration: none;
+    /* padding:2px; */
+}
+.share:hover{
+    background-color: #01255f;
+}
+.description{
+    background-color: #292929;
+    border-radius: 5px ;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.5;
+}
+.about{
+    display: flex;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+
+}
+.about-link{
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    /* border: 1px #5c5a5a solid;  */
+    margin: 5px;
+    border-radius: 10px;
+    a{
+       text-decoration: none;
+       color: white; 
+
+    }  
+}
+.about-link:hover{
+    background-color: #01255f;
+}
+.title{
+    margin-top: 0;
+    font-weight: bold;
+}
+.fulltime{
+    background-color: #16d509;
+}
+.contact-us{
+    display: flex;
+    margin-left: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 70px;
+}
+.contact-form{
+    display: block;
+    width: 50vw;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    resize: none;
+}
+.contact-logo{
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+.submit{
+    color: #f6eded;
+    background-color: #16d509;
+    font-size: 2vw;
+    width: 51vw;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-post{
+        width: 40vw;
+    }
+
+}
+
+/*=============================================================================================================*/
+
+.login-container{
+    height: 500px;
+    border: 1px rgb(207, 102, 10) solid;
+    text-align: center;
+    /* padding: 10px; */
+}
+.label-style{
+    font-size: 3vw;
+    margin-top: -5px;  
+}
+.input-style{
+    width: 350px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.login{
+    color: #020000;
+    font-weight: bold;
+    background-color: #bb6c05;
+    font-size: 20px;
+    width: 362px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.login:hover{
+    background-color: #c6ac18;
+
+}
+.login-text{
+    margin-top: 130px;
+}
+.btn-style{
+    background-color: #129109;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 2px;  
+    font-weight: bold;
+}
+.btn-style:hover{
+    background-color: #16d509;
+}
+
+
+
+/* ========================================================== footer ========================================================================================== */
+
+footer{
+    background-color: black;
+}
+.footer{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100vw; */
+    border-top: 2px rgb(212, 115, 4) solid;
+    border-radius: 10px;
+    /* border-bottom: 2px rgb(212, 115, 4) solid; */
+    background-color: black;
+}
+
+.footer-cols{
+    margin-right: 10vw;
+    margin-left: 2vw;
+}
+.footer-text{
+    color: rgb(183, 178, 178);
+    text-decoration: none;
+}
+.footer-text:hover{
+    color: rgb(212, 115, 4);
+}
+.foot-copyright{
+    color: rgb(151, 151, 151);
+    margin-bottom: 10px;
+    text-align: center;
+}
